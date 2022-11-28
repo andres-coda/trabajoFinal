@@ -1,0 +1,254 @@
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+body{
+    background-color: rgb(71, 94, 40);
+}
+
+header{
+    background-color: rgba(128, 128, 128, 0);
+    box-shadow: 2px 2px 5px black;
+}
+
+nav{
+    margin: 0;
+    
+    background-color:rgb(75, 31, 31);
+}
+ul{
+    list-style: none;
+    
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10px 40px;
+}
+ul li a:hover{
+    background-color:rgb(151, 151, 124) ;
+    color: black;
+    box-shadow: 2px 2px 5px;
+  
+}
+ul li a:active{
+    box-shadow:none;
+    border-radius: 15px;
+  
+}
+
+.ingresar{
+    float: right;
+}
+
+footer{
+    background-color:rgb(75, 31, 31);
+    box-shadow: 2px 2px 5px black;
+    
+}
+
+#contenido{
+    border-radius: 5px;
+    background-color: burlywood;
+    margin: 5px 100px 5px 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+    box-shadow: 2px 2px 5px black;
+}
+@media screen and (max-width: 1404px) {
+    #contenido{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+@media screen and (max-width: 1155px) {
+    #contenido{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+@media screen and (max-width: 906px) {
+    #contenido{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+@media screen and (max-width: 660px) {
+    #contenido{
+      grid-template-columns: 1fr;
+    }
+  }
+
+.botones{
+    list-style: none;
+    background-color: rgb(104, 59, 59);
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+.botonesli{
+    display: inline-block;
+   
+}
+.etqCuadrado{
+    background-color: white;
+    width: 30px;
+    height: 20px;
+    border-radius: 25px;
+    text-decoration-style: solid;
+}
+button{
+    border: none;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0px 20px;
+    background-color: rgb(227, 228, 172);
+}
+button:active {
+    box-shadow: none;
+    border-radius: 15px;
+  }
+.botonMas{
+    width: 30px;
+    height: 30px;
+}
+.botonMenos{
+    width: 30px;
+    height: 30px;
+}
+input{
+    text-align: center;
+}
+#carrito{
+    background-color: rgb(151, 151, 124);
+    border-radius: 15%;
+    position: fixed;
+    right: 1vh;
+    text-align: center;  
+    padding: 10px; 
+    box-shadow: 2px 2px 5px black;
+}
+#compraParrafo{
+    font-size: small;
+}
+button .comprar{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+.cuadradoTexto {
+    width: 30px;
+    height: 30px;
+}
+.articulo{
+    background-color:  rgb(189, 176, 160);
+    text-align: center;
+    margin:10px auto;
+    border-radius:5px;
+    border: 1px solid #999;
+    padding:13px;
+    padding-bottom: 5px;
+    width:220px;
+    height:auto;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 5px black;
+}
+.articulo img{
+    width: 100%;
+  }
+  @media all and (min-width: 150px) and (max-width: 300px)
+  {  
+    .img{
+      margin:20px auto;
+      border-radius:5px;
+      border: 1px solid #999;
+      padding:13px;
+      width:300px;
+      height:300px;
+      background-size: 100% 100%;
+      background-repeat:no-repeat;
+      background-size: cover;
+      
+      }
+    }
+    .articulo img{
+       width:100%;
+    } 
+
+
+.img{
+    margin:10px auto;
+    border-radius:5px;
+    border: 1px solid #999;
+    padding:13px;
+    width:220px;
+    height:220px;
+    background-size: 100vh 100vh;
+    background-repeat:no-repeat;
+    background-size: cover;
+    }
+
+    .contenidoFormulario {
+        display: grid;
+        height: 80vh;
+        place-content: center;
+      }
+      
+      .form-contenido {
+        margin: auto;
+        display: grid;
+        row-gap: 0.5rem;
+        width: 300px;
+        justify-content: center;
+        background-color: burlywood;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px;
+      }
+      
+      h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: .4rem;
+        border-radius: 10px;
+      }
+      
+      .form-contenido input {
+        padding: .3rem;
+        font-size: 1rem;
+        line-height: 1rem;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 2px 2px 5px black;
+      }
+      .form-contenido label{
+        text-align: center;
+      }
+      
+      #form input:focus:not(.btn) {
+        background-color: rgb(227, 228, 172);
+        box-shadow: none;
+      }
+      
+      .btn {
+        margin-top: 1rem;
+        border: none;
+        background-color: rgb(104, 59, 59);
+        color: white;
+        font-size: 1rem;
+        box-shadow: 2px 2px 5px black;
+        cursor: pointer;
+      }
+      
+      .btn:active {
+        box-shadow: none;
+      }
